@@ -1,0 +1,251 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-attachment: fixed;
+	background-image: url(../images/minsk.jpg);
+	font-family: 'Roboto Condensed', sans-serif;
+	background-size: 2000px;
+}
+header {
+}
+.logo-img {
+	margin-top: 20px;
+	width: 80px;
+	border-radius: 40%;
+}
+.logo {
+	position: absolute;
+	top: 0px;
+}
+.link {
+	padding-top: 10px;
+	text-align: center;
+}
+nav a {
+	margin-left: 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: rgb(61, 60, 60);
+}
+
+.main-link {
+	position: relative;
+}
+.main-link:hover {
+	color: red;
+}
+.main-link:hover::before {
+	transform: scaleX(1);
+	transition: transform 0.25s;
+	transform-origin: left;
+}
+.main-link::before {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: red;
+	position: absolute;
+	bottom: -5px;
+	transform: scaleX(0);
+	transition: transform 0.25s;
+	transform-origin: right;
+}
+.container {
+	margin: auto;
+
+	width: 1200px;
+	background-color: rgba(249, 225, 140, 0.9);
+}
+.in-container {
+	padding: 30px;
+}
+
+.prem-tittle h1 {
+	font-size: 50px;
+	margin-top: 90px;
+	margin-left: 50px;
+}
+.prem-brend-p1 {
+	font-size: 15px;
+	width: 700px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.prem-brend-p2 {
+	font-size: 15px;
+	width: 700px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.prem-logo {
+	position: relative;
+	left: 800px;
+	top: -120px;
+}
+.prem-logo img {
+	position: absolute;
+	width: 300px;
+	border-radius: 10px;
+}
+.prem-brend-p3 {
+	font-size: 15px;
+	width: 700px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.prem-brend-p4 {
+	font-size: 15px;
+	width: 600px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.prem-tablet-1 {
+	font-size: 15px;
+	margin-left: 70px;
+	margin-top: 30px;
+}
+li {
+	margin-top: 10px;
+}
+.prem-brend-p5 {
+	font-size: 15px;
+	width: 600px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.prem-brend-p6 {
+	font-size: 15px;
+	width: 900px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.prem-flex-ul-auto {
+	margin-top: 30px;
+	margin-left: 40px;
+	width: 900px;
+}
+.prem-flex-ul {
+	display: flex;
+	justify-content: space-around;
+}
+.prem-metodic-button {
+	text-align: center;
+}
+.prem-metodic-button button {
+	width: 400px;
+	height: 46px;
+	border: none;
+	background-color: rgb(242, 160, 101);
+	font-size: 20px;
+	color: #111;
+	margin-top: 30px;
+	cursor: pointer;
+	position: relative;
+}
+.button-metodic:before {
+	position: absolute;
+	content: '';
+	width: 0px;
+	height: 0px;
+	left: 0;
+	bottom: 0;
+	border: 3px solid transparant;
+	box-sizing: border-box;
+}
+.button-metodic:hover:before {
+	width: calc(240px / 2);
+	height: 46px;
+	border: 3px solid #111;
+	border-right: none;
+	border-bottom: none;
+	transition: height 0.3s linear, width 0.3s linear 0.3s;
+}
+.button-metodic:after {
+	position: absolute;
+	content: '';
+	width: 0px;
+	height: 0px;
+	top: 0;
+	right: 0;
+	border: 3px solid transparant;
+	box-sizing: border-box;
+}
+.button-metodic:hover:after {
+	width: calc(240px / 2);
+	height: 46px;
+	border: 3px solid #111;
+	border-left: none;
+	border-top: none;
+	transition: height 0.3s linear, width 0.3s linear 0.3s;
+}
+footer {
+	background-color: rgba(249, 225, 140);
+	margin-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+.footer-links {
+	margin: auto;
+	width: 900px;
+}
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+}
+.footer-logo img {
+	width: 60px;
+}
+.footer-brend-about p {
+	width: 120px;
+	font-size: 15px;
+}
+.footer-contacts-h2 h2 {
+	font-size: 20px;
+}
+.footer-email a {
+	font-size: 15px;
+	text-decoration: none;
+}
+.footer-email {
+	margin-top: 10px;
+}
+.footer-contacts-btn {
+	margin-top: 30px;
+}
+.footer-contacts-btn button {
+	background-color: rgb(233, 174, 86);
+	border: none;
+	padding: 15px 25px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+.footer-ratting-h2 h2 {
+	font-size: 20px;
+}
+.footer-ratting-href a {
+	color: black;
+}
+.footer-ratting-href {
+	margin-top: 10px;
+}
+.footer-where-h2 h2 {
+	font-size: 20px;
+}
+.footer-where-map {
+	margin-top: 10px;
+}
+.hr {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-radius: 10px;
+	width: 100%;
+	height: 1px;
+	background-color: #111;
+}
+.footer-last-2024 {
+	margin-bottom: 20px;
+}
